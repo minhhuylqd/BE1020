@@ -2,9 +2,11 @@
   "name": "be1020",
   "version": "1.0.0",
   "description": "Backend Entry Task 2 FC",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node dist/index.js"
   },
   "repository": {
     "type": "git",
